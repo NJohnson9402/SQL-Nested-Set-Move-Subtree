@@ -117,6 +117,5 @@ BEGIN
 	SET PLeft = CASE WHEN PLeft > @SubtreeOldRight THEN PLeft - @SubtreeSize ELSE PLeft END,
 		PRight = CASE WHEN PRight >= @SubtreeOldRight THEN PRight - @SubtreeSize ELSE PRight END
 	WHERE PRight >= @SubtreeOldRight
-
 END
 GO
